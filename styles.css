@@ -1,0 +1,102 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:	#FAF8F2;
+  color: #4A3F35;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.main-header hr {
+  border: none;
+  border-top: 2px solid #E6C37A;
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* Section Styling */
+.section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E6C37A;
+}
+
+.main-header h1 {
+  text-align: left; /* Aligns the text to the left */
+  font-size: 2.5rem;
+  color: #A47148;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  max-width: 800px; /* Matches the section width */
+  margin-left: 570px;
+  margin-right: auto; /* Centers the block horizontally */
+}
+
+h2 {
+  font-size: 2rem;
+  color: #A47148;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #4A3F35;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #F5F0E1;
+  border: 1px solid #D4AF37;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-card:hover {
+  background-color: #F4E7C5; /* slightly darker yellow */
+}
+
+/*contact-section*/
+.contact-section ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.contact-section li {
+  list-style: none;
+}
+
+/* Contact List */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #D4AF37;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
