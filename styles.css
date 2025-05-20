@@ -100,3 +100,61 @@ a:hover {
   text-decoration: underline;
 }
 
+
+/* Media Queries */
+@media (max-width: 600px) {
+  body {
+    padding: 0 16px;
+  }
+
+  .page-title h1 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+  .section {
+    padding: 40px 10px;
+  }
+
+  .project-card {
+    padding: 16px;
+  }
+
+  .contact-links a {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.contact-item {
+  border: 1px solid #b48b5a;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.contact-item a, .contact-item button {
+  color: #b48b5a;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+}
+.contact-item button:focus {
+  outline: none;
+}
+
+.divider {
+  margin: 0 8px;
+  color: #b48b5a;
+  font-weight: bold;
+}
