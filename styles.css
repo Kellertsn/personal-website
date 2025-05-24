@@ -17,10 +17,14 @@ body {
 }
 
 /* Header Styles */
+.main-header {
+  margin-bottom: 0; /* Bring title and divider line closer together */
+}
+
 .main-header hr {
   border: none;
   border-top: 2px solid #E6C37A;
-  width: 100%;      /* 改為 100% */
+  width: 100%;      /* Full width */
   margin: 5px auto;
 }
 
@@ -30,9 +34,7 @@ body {
   color: #A47148;
   margin-bottom: 20px;
   margin-top: 10px;
-  max-width: 800px;
-  margin-left: 570px;
-  margin-right: auto;
+  /* Removed max-width and margin-left for alignment */
 }
 
 /* Section Styling */
@@ -41,6 +43,15 @@ body {
   max-width: 800px;
   margin: 0 auto;
   border-bottom: 1px solid #E6C37A;
+  /* Let padding control spacing — no margin top/bottom */
+}
+
+.main-title, .about-section h2, .work-section h2 {
+  font-size: 2.5rem;
+  color: #A47148;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: left;
 }
 
 h2 {
@@ -133,7 +144,8 @@ a:hover {
   border: none;
   border-top: 2px solid #E6C37A;
   width: 90%;
-  margin: 24px auto 32px auto;
+  margin: 2em auto; /* Even top and bottom spacing, centered horizontally */
+  max-width: 80%;   /* Match other section widths */
 }
 
 /* Responsive Design */
@@ -191,7 +203,7 @@ a:hover {
   }
 }
 
-/* Landscape mobile (橫版手機) */
+/* Landscape mobile */
 @media (max-width: 900px) and (orientation: landscape) {
   .main-header h1 {
     font-size: 2rem;
