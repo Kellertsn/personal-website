@@ -182,3 +182,34 @@ a:hover {
     gap: 8px;
   }
 }
+
+/* Landscape mobile (橫版手機) */
+@media (max-width: 900px) and (orientation: landscape) {
+  .main-header h1 {
+    font-size: 2rem;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+  .main-header hr {
+    width: 80%;
+  }
+  .section {
+    padding: 24px 8px;
+    max-width: 100%;
+  }
+  .project-card {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .contact-item {
+    display: inline-block;
+    margin: 6px 4px;
+    width: auto;
+    text-align: center;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+}
