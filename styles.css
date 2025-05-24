@@ -128,6 +128,14 @@ a:hover {
   font-weight: bold;
 }
 
+/* Section Divider */
+.section-divider {
+  border: none;
+  border-top: 2px solid #E6C37A;
+  width: 90%;
+  margin: 24px auto 32px auto;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
   body {
