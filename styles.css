@@ -20,7 +20,7 @@ body {
 .main-header hr {
   border: none;
   border-top: 2px solid #E6C37A;
-  width: 50%;
+  width: 100%;      /* 改為 100% */
   margin: 5px auto;
 }
 
