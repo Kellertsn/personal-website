@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-color:	#FAF8F2;
+  background-color: #FAF8F2;
   color: #4A3F35;
   line-height: 1.6;
 }
@@ -24,23 +24,23 @@ body {
   margin: 5px auto;
 }
 
+.main-header h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #A47148;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: 570px;
+  margin-right: auto;
+}
+
 /* Section Styling */
 .section {
   padding: 60px 20px;
   max-width: 800px;
   margin: 0 auto;
   border-bottom: 1px solid #E6C37A;
-}
-
-.main-header h1 {
-  text-align: left; /* Aligns the text to the left */
-  font-size: 2.5rem;
-  color: #A47148;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  max-width: 800px; /* Matches the section width */
-  margin-left: 570px;
-  margin-right: auto; /* Centers the block horizontally */
 }
 
 h2 {
@@ -61,13 +61,15 @@ h3 {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
+  transition: background 0.2s;
+  cursor: pointer;
 }
 
 .project-card:hover {
-  background-color: #F4E7C5; /* slightly darker yellow */
+  background-color: #F4E7C5;
 }
 
-/*contact-section*/
+/* Contact Section */
 .contact-section ul {
   display: flex;
   gap: 20px;
@@ -100,40 +102,7 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* Media Queries */
-@media (max-width: 600px) {
-  body {
-    padding: 0 16px;
-  }
-
-  .page-title h1 {
-    font-size: 1.8rem;
-    text-align: left;
-  }
-
-  .section {
-    padding: 40px 10px;
-  }
-
-  .project-card {
-    padding: 16px;
-  }
-
-  .contact-links a {
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
-
+/* Contact Item */
 .contact-item {
   border: 1px solid #b48b5a;
   border-radius: 6px;
@@ -157,4 +126,59 @@ a:hover {
   margin: 0 8px;
   color: #b48b5a;
   font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  body {
+    padding: 0 8px;
+  }
+
+  .main-header h1 {
+    font-size: 1.5rem;
+    margin-left: 0;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .main-header hr {
+    width: 90%;
+  }
+
+  .section {
+    padding: 32px 4px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    padding: 12px;
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .contact-item {
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  ul, .contact-section ul {
+    flex-direction: column;
+    gap: 8px;
+  }
 }
